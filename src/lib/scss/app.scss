@@ -1,0 +1,63 @@
+@import "/node_modules/@softlightweb/svelte/dist/scss/global.scss";
+
+:root {
+  --primary-color: #ff3e00;
+  --secondary-color: #da62c4;
+  --color-white: #fff;
+  --color-black: #123;
+  --color-grey-1: #f7f7f7;
+  --color-grey-2: #eee;
+  --color-grey-3: #ccc;
+
+  @media (prefers-color-scheme: dark) {
+    --primary-color: #ff3e00;
+    --secondary-color: #da62c4;
+    --color-white: #123;
+    --color-black: #fff;
+    --color-grey-1: #222;
+    --color-grey-2: #333;
+    --color-grey-3: #555;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+input, textarea {
+  border: 1px solid var(--color-grey-3);
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: var(--color-black);
+  background-color: var(--color-white);
+}
